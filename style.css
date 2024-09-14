@@ -1,0 +1,56 @@
+body {
+    background-color:#5c90ce;
+    color: white;
+    font-family: 'Roboto', sans-serif; /* Aplique a fonte Roboto e adicione uma fonte alternativa genérica */
+    font-style: normal;
+}
+
+.bordasArredondadas {
+    border-radius: 25%;
+}
+
+p {
+    margin-bottom: 40px; /* Ajuste o valor conforme necessário */
+}
+
+
+/* Define o estilo para o header */
+header {
+    display: flex; /* Usa flexbox para disposição horizontal dos itens */
+    align-items: center; /* Alinha verticalmente o avatar e o menu */
+    padding: 30px; /* Adiciona algum preenchimento ao redor do header */
+    background-color: #5c90ce; /* Cor de fundo para o header */
+}
+
+/* Estilo para o avatar */
+.avatar {
+    margin-right: 20px; /* Espaçamento entre o avatar e o menu */
+}
+
+/* Estilo para o menuPrincipal */
+.menuPrincipal ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento padrão */
+    margin: 0; /* Remove a margem padrão */
+    display: flex; /* Faz com que os itens da lista fiquem lado a lado */
+}
+
+.menuPrincipal li {
+    margin-right: 20px; /* Espaço entre os itens do menu */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: white; /* Define a cor do texto dos links */
+    font-family: 'Roboto', sans-serif; /* Aplica a fonte desejada */
+    font-weight: bold; /* Aplica negrito ao texto */
+    padding: 10px 15px; /* Adiciona algum preenchimento aos links */
+    text-align: center;
+}
+
+.menuPrincipal a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: white; /* Define a cor do texto dos links */
+    font-family: 'Roboto', sans-serif; /* Aplica a fonte desejada */
+    font-weight: bold; /* Aplica negrito ao texto */
+    padding: 10px 15px; /* Adiciona algum preenchimento aos links */
+    text-align: center;
+}
+
