@@ -31,8 +31,8 @@ header {
 .menuPrincipal ul {
     list-style-type: none; /* Remove os marcadores da lista */
     padding: 0; /* Remove o preenchimento padrão */
-    margin: 0; /* Remove a margem padrão */
-    display: flex; /* Faz com que os itens da lista fiquem lado a lado */
+    margin: 20px; /* Remove a margem padrão */
+    display: inline-block; /* Faz com que os itens da lista fiquem lado a lado */
 }
 
 .menuPrincipal li {
@@ -43,6 +43,9 @@ header {
     font-weight: bold; /* Aplica negrito ao texto */
     padding: 10px 15px; /* Adiciona algum preenchimento aos links */
     text-align: center;
+    width: 10%;
+    display: inline-block;
+    
 }
 
 .menuPrincipal a {
@@ -53,4 +56,5 @@ header {
     padding: 10px 15px; /* Adiciona algum preenchimento aos links */
     text-align: center;
 }
+
 
