@@ -1,3 +1,10 @@
+:root {
+    --cor-fundo: rgb(236, 234, 234);
+    font-size: 14px;
+    --cor-fundo-card: white;
+   
+   }
+
 body {
     background-color:#5c90ce;
     color: white;
@@ -54,7 +61,92 @@ header {
     font-family: 'Roboto', sans-serif; /* Aplica a fonte desejada */
     font-weight: bold; /* Aplica negrito ao texto */
     padding: 10px 15px; /* Adiciona algum preenchimento aos links */
+    font-size: 20px;
     text-align: center;
 }
 
 
+
+.destaques{
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;     /*usar o flex wrap para responsividade sem definir medidas, não resolve.. Sem definição ele ocupa todo o espaço disponível ao inves de empilhar*/
+    gap: 12px;
+    padding: 25px;
+    justify-content: space-around;
+}
+
+.destaques .cards{
+    justify-content: center;
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.1);
+    width: 200px;
+    height: 200px;
+    /*border: 1px solid gray;*/
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 30px;
+    gap: 12px;
+    background-color: var(--cor-fundo-card);
+/*CSS TRANSFORM PROPERTY*/
+    transition: 0.9s;
+}
+
+.destaques .cards:hover{
+/*CSS TRANSFORM PROPERTY*/
+    /*background-color: rgb(192, 14, 14);*/
+    transform: scale(1.1) ;
+}
+
+.destaques .cards img {
+    width: 200px;
+    border-radius: 25%;
+}
+
+.destaques .cards h3 {
+    text-align: center;
+    color: black;
+}
+
+.page-title h2 {
+    padding: 30px;
+    gap: 12px;
+    color: white
+}
+
+.sobre{
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;     /*usar o flex wrap para responsividade sem definir medidas, não resolve.. Sem definição ele ocupa todo o espaço disponível ao inves de empilhar*/
+    gap: 12px;
+    padding: 25px;
+    justify-content: center;
+    color: black;
+}
+
+.sobre .descricao{
+    justify-content: center;
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.1);
+    width: 300px;
+    height: 300px;
+    /*border: 1px solid gray;*/
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 30px;
+    gap: 12px;
+    background-color: var(--cor-fundo-card);
+/*CSS TRANSFORM PROPERTY*/
+    transition: 0.9s;
+}
+
+
+.sobre .descricao img {
+    width: 200px;
+}
+
+.sobre .descricao h3 {
+    text-align: center;
+}
