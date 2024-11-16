@@ -31,7 +31,57 @@ header {
 
 /* Estilo para o avatar */
 .avatar {
+    position: relative;
+  }
+  
+  .login-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
     margin-right: 20px; /* Espaçamento entre o avatar e o menu */
+  }
+  
+  .avatar:hover .login-menu {
+    display: block;
+  }
+  
+  .login-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .login-menu a:hover {
+    background-color: #f1f1f1;
+  }
+  
+.login-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.avatar:hover .login-menu {
+  display: block;
+}
+
+.login-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.login-menu a:hover {
+  background-color: #f1f1f1;
+}
 }
 
 /* Estilo para o menuPrincipal */
@@ -149,4 +199,86 @@ header {
 
 .sobre .descricao h3 {
     text-align: center;
+}
+
+.listas {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column !important;
+  gap: 24px;
+  padding: 25px;
+  align-items: center;
+}
+
+.listas .local {
+  justify-content: flex-start;
+  box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.1);
+  width: 100% !important;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 20px;
+  padding: 20px;
+  gap: 20px;
+  background-color: var(--cor-fundo-card);
+  transition: 0.9s;
+}
+
+.listas .local:hover {
+  transform: scale(1.02);
+}
+
+.listas .local .imagem-container {
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.listas .local img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15%;
+}
+
+.listas .local .texto-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.listas .local h3 {
+  text-align: left;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.listas .local p {
+  color: black;
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .listas .local {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .listas .local .imagem-container {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+  }
+
+  .listas .local .texto-container {
+    align-items: center;
+  }
+
+  .listas .local h3,
+  .listas .local p {
+    text-align: center;
+  }
 }
